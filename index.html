@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #fce4ec;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1, h2 {
+            color: #d81b60;
+        }
+        .message {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .hidden-message {
+            display: none;
+            color: #d81b60;
+            font-size: 22px;
+            margin-top: 10px;
+        }
+        button {
+            background-color: #d81b60;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #ad1457;
+        }
+        .ghazal {
+            margin-top: 20px;
+            font-size: 20px;
+            font-style: italic;
+            color: #333;
+            background: #fff3f3;
+            padding: 15px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>For You</h1>
+        <p class="message">A sanctuary of words, woven just for you.</p>
+        
+        <h2>Things I Adore About You</h2>
+        <ul>
+            <li class="message">Your laughter is music that lingers in my soul.</li>
+            <li class="message">The way your presence turns moments into poetry.</li>
+            <li class="message">Your heart—so kind so endlessly giving.</li>
+        </ul>
+        
+        <h2>Moments in Time</h2>
+        <p class="message">Remember when my words danced in the air, just for you?</p>
+        <p class="message">That time we stayed up talking about random things?</p>
+        
+        <button onclick="showMessage()">A Whispered Secret</button>
+        <p id="secret" class="hidden-message">You are a dream I never wish to wake from. 💖</p>
+        
+        <h2>My Ghazal for You</h2>
+        <div class="ghazal">
+Teri soorat mein ujala dikhta hai<br>
+Jaise andheron mein taara dikhta hai<br>
+          
+Teri baatein bhi ek raaz si hain<br>
+Har lafz mein ek ishara dikhta hai<br>
+
+Teri chhup-chhup ke jo dekhne ki aadat<br>
+Mujhko taqdeer ka likha dikhta hai<br>
+
+Jis jagah tu kadam rakh de Heer<br>
+Wahan mujhe sajda dikhta hai<br>
+
+Teri aawaaz mein hai rooh ki thandak<br>
+Jaise sahra mein savera dikhta hai<br>
+
+        </div>
+    </div>
+    
+    <script>
+        function showMessage() {
+            document.getElementById('secret').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
